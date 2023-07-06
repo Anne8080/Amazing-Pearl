@@ -1,0 +1,47 @@
+.footer{
+    background-color: #2F303A;
+    .top{
+        display: flex;
+        color: white;
+        padding: 7% 0;
+        img{
+            width: 200px;
+        }
+        .feet{
+            margin: 0 1%;
+            h2{
+                font-size: 24px;
+            }
+        }
+        ul{
+            list-style: none;
+            li{
+                margin: 8% 0;
+                font-size: 24px;
+                font-weight: 500;
+                align-items:center;
+                display: flex;
+                .icons{
+                    margin-right: 2%;
+                }
+                // text-transform: uppercase;
+                a{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .bottom{
+        img{
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            background-color: #FFD700;
+            color: black;
+            padding: 5px 0;
+        }
+    }
+}

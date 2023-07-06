@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #FFD700;
+    
+
+    ul{
+        list-style: none;
+        padding: 7px;
+        display: flex;
+        justify-content: flex-end;
+        .navlinks{
+            font-size: 16px;
+            color: black;
+            margin: 0 10px;
+        }
+    }
+}

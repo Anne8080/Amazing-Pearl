@@ -1,0 +1,276 @@
+.homehead{
+    background-color: var(--bluebg);
+    height: fit-content;
+    padding: 0 5px;
+    position: relative;
+    #b1,#b2,#b3,#b4,#b5,#b6{
+        position: absolute;
+    }
+    #b1{
+        bottom: 0;
+        right: 0;
+    }
+    #b2{
+        top: 12%;
+        left: 0;
+    }
+    #b3{
+        right: 0;
+        top: 10%;
+    }
+    #b4{
+        bottom: 0;
+        left: 17%;
+        z-index: 0;
+    }
+    #b5{
+        bottom: 5%;
+        left: 15%;
+        z-index: 0;
+    }
+    #b6{
+        left: 53%;
+        bottom: 30%;
+        z-index: 0;
+        width: 120px;
+    }
+    .down{
+        background-image: url('../../img/oldwoman.png');
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 90vh;
+        display: flex;
+        justify-content: flex-end;
+
+        .right{
+            width: 40%;
+            margin: 5% 0;
+            .top{
+                color: #F5F5F5;
+                h2{
+                    font-size: 40px;
+                }
+                h4{
+                    font-size: 24px;
+                    margin-top: 6%;
+                }
+            }
+            .bottom{
+                color: white;
+                margin: 20% 0 5% 5%;
+                p{
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 50px;
+                }
+                .zip{
+                    align-items: center;
+                    display: flex;
+                    input{
+                        width: 80%;
+                        padding: 3% 5%;
+                        font-size: 20px;
+                        // color: #BBB7B7;
+                        border-bottom-left-radius: 15px;
+                        border-top-left-radius: 15px;
+                        border: none;
+                    }
+                    input:focus{
+                        outline: none;
+                    }
+                    button{
+                        cursor: pointer;
+                        background-color: #FFD700;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        border-bottom-right-radius: 15px;
+                        border-top-right-radius: 15px;
+                        padding: 3%;
+                    }
+                    button:focus{
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.whatwedo{
+    h2{
+        color: #000000AB;
+        font-size: 40px;
+        text-align: center;
+        line-height: 140px;
+    }
+    #doings{
+        display: flex;
+        justify-content: center;
+        padding: 0 5%;
+    }
+}
+.habout{
+    padding: 5%;
+    text-align: center;
+    margin-bottom: 250px;
+    h2{
+        color: #000000AB;
+        font-size: 40px;
+        line-height: 140px;
+    }
+    p{
+        font-size: 22px;
+        margin-bottom: 10%;
+    }
+    .button{
+        padding: 15px 40px;
+        background-color: #FFD700;
+        border-radius: 15px;
+        font-weight: 600;
+        
+    }
+}
+.habouttwo{
+    background-color: #2F303A;
+    position: relative;
+    .top {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+        img{
+            margin: -180px 0 0;
+            width: 80vw;
+        }
+    }
+    .bottom{
+        padding: 5% 3%;
+        display: flex;
+        color: white;
+        .right{
+            padding: 5% 5% 7% 10%;
+            font-weight: 500;
+            p{
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+    #ellipse{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+.article{
+    background-color: #2F303A;
+    padding: 2%;
+    color: white;
+    h3{
+        text-align: center;
+        font-size: 24px;
+    }
+    .featured{
+        display: flex;
+        padding: 3% 0;
+        align-items: center;
+        .left{
+            padding-left: 4%;
+            span{
+                background-color: #FFD700;
+                padding: 10px 15px;
+                color: black;
+                font-size: 23px;
+                font-weight: 500;
+                // margin-bottom: 15px;
+            }
+        }
+        .right{
+            padding: 0% 3% 10%;
+            h2{
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            h4{
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 60px;
+                padding-right: 20%;
+            }
+            a{
+                background-color: #FFD700;
+                font-weight: 500;
+                padding: 10px 18%;
+                font-size: 20;
+            }
+
+        }
+    }
+    .latest{
+        display: flex;
+        justify-content: center;
+        margin: 3% 0 8%;
+    }
+    p{
+        text-align: center;
+        a{
+            border: 3px solid #FFD700;
+            font-weight: 500;
+            padding: 10px 5%;
+            font-size: 20;
+            color: white;
+        }
+    }
+}
+.sign{
+    display: flex;
+    padding: 10% 3%;
+    .left{
+        text-align: center;
+        padding-right: 5%;
+        img{
+            width: 70px;
+        }
+    }
+    .right{
+        width: 90%;
+        .info{
+            display: flex;
+            justify-content: space-between;
+
+            input{
+                width: 100%;
+                font-size: 20px;
+                // color: #BBB7B7;
+                margin-top: 10px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid black;
+                
+            }
+            input:focus{
+                outline: none;
+            }
+        }
+        .check{
+            display: flex;
+            padding: 5% 0;
+            input{
+                cursor: pointer;
+            }
+            p{
+                margin-left: 2%;
+                a{
+                    text-decoration: underline;
+                }
+            }
+        }
+        #sign{
+            background-color: #FFD700;
+            padding: 2% 10%;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+}

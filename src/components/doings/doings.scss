@@ -1,0 +1,29 @@
+.doings{
+    background-color: #00000017;
+    text-align: center;
+    margin: auto 10px;
+    padding: 20px;
+    width: 20vw;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h4{
+        font-size: 20px;
+        line-height: 60px;
+        font-weight: 800;
+    }
+    p{
+        .doingex{
+            font-size: 14px;
+        }
+        a{
+            color: #000000;
+        }
+    }
+
+}
+.doings:hover{
+    background-color: #0000002e;
+}
