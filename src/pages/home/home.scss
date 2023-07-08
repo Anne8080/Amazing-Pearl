@@ -29,7 +29,7 @@
         z-index: 0;
     }
     #b6{
-        left: 53%;
+        left: 50%;
         bottom: 30%;
         z-index: 0;
         width: 120px;
@@ -39,7 +39,7 @@
         position: relative;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 90vh;
+        height: 70vh;
         display: flex;
         justify-content: flex-end;
 
@@ -81,7 +81,7 @@
                     }
                     button{
                         cursor: pointer;
-                        background-color: #FFD700;
+                        background-color: var(--yellow);
                         border: none;
                         outline: none;
                         color: white;
@@ -133,8 +133,9 @@
     }
 }
 .habouttwo{
-    background-color: #2F303A;
+    background-color: var(--bluebg);
     position: relative;
+    
     .top {
         display: flex;
         justify-content: center;
@@ -159,17 +160,17 @@
     }
     #ellipse{
         position: absolute;
-        right: 0;
+        right: -5%;
         bottom: 0;
     }
 }
 .article{
-    background-color: #2F303A;
+    background-color: var(--bluebg);
     padding: 2%;
     color: white;
     h3{
         text-align: center;
-        font-size: 24px;
+        font-size: 44px;
     }
     .featured{
         display: flex;
@@ -177,6 +178,11 @@
         align-items: center;
         .left{
             padding-left: 4%;
+            // display: flex;
+            // flex-direction: column;
+            img{
+                width: 100%;
+            }
             span{
                 background-color: #FFD700;
                 padding: 10px 15px;
@@ -237,13 +243,19 @@
         width: 90%;
         .info{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+
+            .f{
+                // margin-right: 40px;
+                width: 50%;
+            }
 
             input{
-                width: 100%;
+                width: 90%;
                 font-size: 20px;
                 // color: #BBB7B7;
                 margin-top: 10px;
+                
                 background-color: transparent;
                 border: none;
                 border-bottom: 1px solid black;

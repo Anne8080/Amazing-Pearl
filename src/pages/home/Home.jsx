@@ -20,28 +20,34 @@ import ellipse4 from '../../img/Ellipse4.png'
 import ellipse5 from '../../img/Ellipse5.png'
 import Footer from '../../components/footer/Footer'
 import SearchIcon from '@mui/icons-material/Search';
+import {motion} from 'framer-motion'
+// import {Link} from 'react-router-dom'
 
 const Home = () => {
     const fill = [
         {
             title: 'Home Support',
             explain: 'Help with light housekeeping, grocery shopping, transportation…',
-            link: '#'
+            link: '#',
+            del: 0
         },
         {
             title: 'Personal Care',
             explain: 'There for physical assistance, hygiene, mobility…',
-            link: '#'
+            link: '#',
+            del: .1
         },
         {
             title: 'Nursing services',
             explain: 'In-home medical care, ostomy care…',
-            link: '#'
+            link: '#',
+            del: .2
         },
         {
             title: 'Respite care',
             explain: 'Support for conditions like dementia',
-            link: '#'
+            link: '#',
+            del: .3
         }
     ]
     const latest = [
@@ -65,18 +71,18 @@ const Home = () => {
         },
     ]
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
         <Navbar/>
 
         <section>
             <div className="homehead">
                 <img id='b1' src={ellipse1} alt="" />
                 <img id='b2' src={ellipse2} alt="" />
-                <img id='b3' src={ellipse3} alt="" />
+                <motion.div id='b3' initial={{ y: '-50%' }} animate={{ y: '0' }} transition={{duration: 1.5, type: 'spring'}}><img  src={ellipse3} alt="" /></motion.div>
                 <img id='b4' src={ellipse4} alt="" />
+                <motion.div id='b6' initial={{ x: '50%' }} animate={{ x: '0' }} transition={{duration: 1.5, type: 'spring'}}  ><img src={ellipse5} alt="" /></motion.div>
                 <img id='b5' src={ellipse5} alt="" />
-                <img id='b6' src={ellipse5} alt="" />
-                <div className="up"><img src={logo} alt="" /></div>
+                <motion.div initial={{ x: '-100%' }} animate={{ x: '0' }} transition={{duration: 1.5, type: 'spring'}} className="up"><img src={logo} alt="" /></motion.div>
                 <div className="down">
                     <div className="right">
                         <div className="top">
@@ -98,7 +104,7 @@ const Home = () => {
                 <h2>What We Do</h2>
                 <div id='doings'>
                     { fill.map((fill, i)=>(
-                        <Doings title={fill.title} explain={fill.explain} link={fill.link} />
+                        <motion.div initial={{ y: '-50%', opacity: 0 }} whileInView={{ y: '0', opacity: 1 }} transition={{duration: 1.5, delay: fill.del, type: 'spring'}} ><Doings title={fill.title} explain={fill.explain} link={fill.link} /></motion.div>
                     ))}
                 </div>
                 {/* Slider */}
@@ -111,12 +117,12 @@ const Home = () => {
                 <a className='button' href="">Learn More</a>
             </div>
             <div className="habouttwo">
-                <div className="top"><img src={feed} alt="" /></div>
+                <motion.div initial={{ y: '-50%', opacity: 0 }} whileInView={{ y: '0', opacity: 1 }} transition={{duration: 1, type: 'spring'}} className="top"><img src={feed} alt="" /></motion.div>
                 <div className="bottom">
                     <div className="left"><img src={learn1} alt="" /></div>
                     <div className="right"><p>We believe there’s more to caring for people than just providing in-home assistance. For decades, families have trusted Right at Home for our expert guidance and experience to help them navigate every step of the aging journey.</p></div>
                 </div>
-                <img id='ellipse' src={ellipse1} alt="" />
+                <img id='ellipse' src={ellipse5} alt="" />
             </div>
         </section>
         <section>
@@ -124,8 +130,8 @@ const Home = () => {
                 <h3>Articles</h3>
                 <div className="featured">
                     <div className="left">
-                        <span>Featured Article</span>
-                        <img src={oldman} alt="" />
+                        <motion.div initial={{ x: '-50%'}} whileInView={{ x: '0'}} transition={{duration: .5, type: 'spring'}}> <span>Featured Article</span> </motion.div>
+                        <div><img src={oldman} alt="" /></div>
                     </div>
                     <div className="right">
                         <h2>Caring for a Loved One With Aphasia</h2>
@@ -150,11 +156,11 @@ const Home = () => {
                 <div className="right">
                     <form action="">
                         <div className="info">
-                            <div className="l">
+                            <div className="f">
                                 <label htmlFor="">*Name</label><br />
                                 <input type="text" />
                             </div>
-                            <div className="r">
+                            <div className="f">
                                 <label htmlFor="">*Email</label><br />
                                 <input type='email' />
                             </div>
@@ -163,7 +169,7 @@ const Home = () => {
                             <input type="checkbox" />
                             <p>By checking this box and submitting this form, you are consenting to receive marketing emails from Right at Home. You can revoke your consent to receive emails at any time. <a href=''>Privacy Policy</a>.</p>
                         </div>
-                        <a id='sign' href="">Sign up</a>
+                        <input id='sign' type="submit" value="Sign up" />
                     </form>
                 </div>
             </div>

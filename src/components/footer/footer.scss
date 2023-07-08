@@ -2,10 +2,11 @@
     background-color: #2F303A;
     .top{
         display: flex;
+        justify-content: space-around;
         color: white;
-        padding: 7% 0;
+        padding: 3% 0;
         img{
-            width: 200px;
+            width: 150px;
         }
         .feet{
             margin: 0 1%;

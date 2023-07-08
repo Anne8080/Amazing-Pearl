@@ -1,0 +1,30 @@
+#signbg{
+    height: 100vh;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background-color: var(--bluebg);
+
+    h1{
+        font-weight: 800;
+        font-size: 48px;
+        align-self: center;
+        span{
+            font-size: 70px;
+            color: var(--yellow);
+        }
+        
+    }
+    .signup{
+        background-color: #00000073;
+        border-radius: 18px;
+        padding: 5% 7%;
+        input{
+            border: 2px solid var(--yellow);
+            border-radius: 4px;
+            margin: 3% 0;
+        }
+    }
+}
