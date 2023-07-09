@@ -19,8 +19,8 @@ import ellipse3 from '../../img/Ellipse3.png'
 import ellipse4 from '../../img/Ellipse4.png'
 import ellipse5 from '../../img/Ellipse5.png'
 import Footer from '../../components/footer/Footer'
-import SearchIcon from '@mui/icons-material/Search';
 import {motion} from 'framer-motion'
+import Zipform from '../../components/zipform/Zipform'
 // import {Link} from 'react-router-dom'
 
 const Home = () => {
@@ -82,7 +82,7 @@ const Home = () => {
                 <img id='b4' src={ellipse4} alt="" />
                 <motion.div id='b6' initial={{ x: '50%' }} animate={{ x: '0' }} transition={{duration: 1.5, type: 'spring'}}  ><img src={ellipse5} alt="" /></motion.div>
                 <img id='b5' src={ellipse5} alt="" />
-                <motion.div initial={{ x: '-100%' }} animate={{ x: '0' }} transition={{duration: 1.5, type: 'spring'}} className="up"><img src={logo} alt="" /></motion.div>
+                <motion.div id='img' initial={{ x: '-100%' }} animate={{ x: '0' }} transition={{duration: 1.5, type: 'spring'}} className="up"><img src={logo} alt="" /></motion.div>
                 <div className="down">
                     <div className="right">
                         <div className="top">
@@ -91,9 +91,7 @@ const Home = () => {
                         </div>
                         <div className="bottom">
                             <p>Find services in your area</p>
-                            <div className="zip">
-                                <input type="text" placeholder='Enter ZIP code/city, state ' /><button><SearchIcon/></button>
-                            </div>
+                            <Zipform/>
                         </div>
                     </div>
                 </div>

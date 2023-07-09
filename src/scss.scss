@@ -9,9 +9,39 @@
 :root{
     --bluebg: #2F303A;
     --yellow: #FFD700;
+    --yellowhover: #ffd900dc;
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+input{
+    border: none;
+    
+}
+input:focus{
+    outline: none;
+}
+#b1{
+    bottom: 0;
+    right: 0;
+}
+
+
+#b1,#b2,#b3,#b4,#b5,#b6{
+    position: absolute;
+}
+
+.button{
+    padding: 15px 40px;
+    background-color: var(--yellow);
+    border-radius: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--yellowhover);
 }

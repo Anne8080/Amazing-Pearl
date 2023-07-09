@@ -1,15 +1,9 @@
 .homehead{
     background-color: var(--bluebg);
     height: fit-content;
-    padding: 0 5px;
+    padding: 0 2% 0 0;
     position: relative;
-    #b1,#b2,#b3,#b4,#b5,#b6{
-        position: absolute;
-    }
-    #b1{
-        bottom: 0;
-        right: 0;
-    }
+    
     #b2{
         top: 12%;
         left: 0;
@@ -34,6 +28,11 @@
         z-index: 0;
         width: 120px;
     }
+
+    #img{
+        margin-left: 2%;
+    }
+    
     .down{
         background-image: url('../../img/oldwoman.png');
         position: relative;
@@ -45,7 +44,7 @@
 
         .right{
             width: 40%;
-            margin: 5% 0;
+            margin: 5% 0; 
             .top{
                 color: #F5F5F5;
                 h2{
@@ -64,36 +63,7 @@
                     text-align: center;
                     line-height: 50px;
                 }
-                .zip{
-                    align-items: center;
-                    display: flex;
-                    input{
-                        width: 80%;
-                        padding: 3% 5%;
-                        font-size: 20px;
-                        // color: #BBB7B7;
-                        border-bottom-left-radius: 15px;
-                        border-top-left-radius: 15px;
-                        border: none;
-                    }
-                    input:focus{
-                        outline: none;
-                    }
-                    button{
-                        cursor: pointer;
-                        background-color: var(--yellow);
-                        border: none;
-                        outline: none;
-                        color: white;
-                        border-bottom-right-radius: 15px;
-                        border-top-right-radius: 15px;
-                        padding: 3%;
-                    }
-                    button:focus{
-                        border: none;
-                        outline: none;
-                    }
-                }
+                
             }
         }
     }
@@ -124,13 +94,7 @@
         font-size: 22px;
         margin-bottom: 10%;
     }
-    .button{
-        padding: 15px 40px;
-        background-color: #FFD700;
-        border-radius: 15px;
-        font-weight: 600;
-        
-    }
+    
 }
 .habouttwo{
     background-color: var(--bluebg);
@@ -257,12 +221,8 @@
                 margin-top: 10px;
                 
                 background-color: transparent;
-                border: none;
                 border-bottom: 1px solid black;
                 
-            }
-            input:focus{
-                outline: none;
             }
         }
         .check{
