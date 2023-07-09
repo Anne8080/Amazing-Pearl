@@ -4,6 +4,7 @@ import './backnext.scss'
 
 const Backnext = ({para, back, next}) => {
   return (
+    // buttons for register pages
     <div className='backnext'>
         <div className="inner">
             <Link to={back}><button className="button" id='button'>Back</button></Link>

@@ -8,6 +8,7 @@ import './register.scss'
 const Regonef = () => {
   return (
     <div>
+      {/* Register page one */}
         <Navbar/>
         <section className='register'>
             <Numbers one='it' />
@@ -15,6 +16,7 @@ const Regonef = () => {
                 <h2>Tell us how we can help you</h2>
                 <p>I am looking for care on behalf of :</p>
             </div>
+            {/* dropdown will be added soon */}
             <Link to={'/register/steptwofirst'}><button className="button">Next</button></Link>
         </section>
         <Footer/>

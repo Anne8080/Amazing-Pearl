@@ -9,6 +9,7 @@ import './register.scss'
 const Regthree = () => {
   return (
     <div>
+      {/* register page three. Zip code */}
         <Navbar/>
         <section className="register">
             <Numbers three='it' />

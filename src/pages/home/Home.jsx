@@ -21,9 +21,11 @@ import ellipse5 from '../../img/Ellipse5.png'
 import Footer from '../../components/footer/Footer'
 import {motion} from 'framer-motion'
 import Zipform from '../../components/zipform/Zipform'
+import Slide from '../../components/slide/Slide'
 // import {Link} from 'react-router-dom'
 
 const Home = () => {
+    // data for what we do section
     const fill = [
         {
             title: 'Home Support',
@@ -50,6 +52,7 @@ const Home = () => {
             del: .3
         }
     ]
+    // data for article section
     const latest = [
         {
             img: article1,
@@ -74,6 +77,7 @@ const Home = () => {
     <div style={{overflow:'hidden'}}>
         <Navbar/>
 
+        {/* header */}
         <section>
             <div className="homehead">
                 <img id='b1' src={ellipse1} alt="" />
@@ -97,6 +101,8 @@ const Home = () => {
                 </div>
             </div>
         </section>
+
+        {/* what we do section including slider */}
         <section>
             <div className='whatwedo'>
                 <h2>What We Do</h2>
@@ -105,15 +111,19 @@ const Home = () => {
                         <motion.div initial={{ y: '-50%', opacity: 0 }} whileInView={{ y: '0', opacity: 1 }} transition={{duration: 1.5, delay: fill.del, type: 'spring'}} ><Doings title={fill.title} explain={fill.explain} link={fill.link} /></motion.div>
                     ))}
                 </div>
-                {/* Slider */}
+                <div className="slide"><Slide/></div>
             </div>
         </section>
+
+        {/* about section */}
         <section>
+            {/* about writeup */}
             <div className="habout">
                 <h2>About Us</h2>
                 <p>Amazing pearl is a residential service agaency that aims to improve the quality of life of our clients through the delivery of amazing excellent cpmpassionate care and extraordinary services in the comfort of their homes while being recognized as an employer of first choice. <br /> Our mission is to create a compassionate and comfortable enviroment for both the adults and pediatrics entrusted in our care and foster a healthy relationship amongst them and their family.</p>
                 <a className='button' href="">Learn More</a>
             </div>
+            {/* second part of about section */}
             <div className="habouttwo">
                 <motion.div initial={{ y: '-50%', opacity: 0 }} whileInView={{ y: '0', opacity: 1 }} transition={{duration: 1, type: 'spring'}} className="top"><img src={feed} alt="" /></motion.div>
                 <div className="bottom">
@@ -123,9 +133,12 @@ const Home = () => {
                 <img id='ellipse' src={ellipse5} alt="" />
             </div>
         </section>
+
+        {/* article section */}
         <section>
             <div className="article">
                 <h3>Articles</h3>
+                {/* featured article */}
                 <div className="featured">
                     <div className="left">
                         <motion.div initial={{ x: '-50%'}} whileInView={{ x: '0'}} transition={{duration: .5, type: 'spring'}}> <span>Featured Article</span> </motion.div>
@@ -137,6 +150,7 @@ const Home = () => {
                         <a href="">Learn More</a>
                     </div>
                 </div>
+                {/* latest articles */}
                 <div className="latest">
                     { latest.map((fill, i)=>(
                         <Articles img={fill.img} title={fill.title} words={fill.words} link={fill.link} />
@@ -145,6 +159,8 @@ const Home = () => {
                 <p><a href="">Latest articles</a></p>
             </div>
         </section>
+
+        {/* sign up section */}
         <section>
             <div className="sign">
                 <div className="left">
@@ -167,6 +183,7 @@ const Home = () => {
                             <input type="checkbox" />
                             <p>By checking this box and submitting this form, you are consenting to receive marketing emails from Right at Home. You can revoke your consent to receive emails at any time. <a href=''>Privacy Policy</a>.</p>
                         </div>
+                        {/* recaptcha to be added here */}
                         <input id='sign' type="submit" value="Sign up" />
                     </form>
                 </div>

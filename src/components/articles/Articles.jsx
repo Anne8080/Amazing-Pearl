@@ -4,6 +4,7 @@ import './articles.scss'
 const Articles = ({img, title, words, link}) => {
   return (
     <div className='lart'>
+      {/* articles section extension */}
         <img src={img} alt="" />
         <h2>{title}</h2>
         <p>{words}</p>

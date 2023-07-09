@@ -80,9 +80,14 @@
         justify-content: center;
         padding: 0 5%;
     }
+    .slide{
+        background-color: var(--bluebg);
+        padding: 2% 0;
+        margin: 3% 0;
+    }
 }
 .habout{
-    padding: 5%;
+    padding: 1% 5% 5%;
     text-align: center;
     margin-bottom: 250px;
     h2{
@@ -205,39 +210,8 @@
     }
     .right{
         width: 90%;
-        .info{
-            display: flex;
-            justify-content: flex-start;
-
-            .f{
-                // margin-right: 40px;
-                width: 50%;
-            }
-
-            input{
-                width: 90%;
-                font-size: 20px;
-                // color: #BBB7B7;
-                margin-top: 10px;
-                
-                background-color: transparent;
-                border-bottom: 1px solid black;
-                
-            }
-        }
-        .check{
-            display: flex;
-            padding: 5% 0;
-            input{
-                cursor: pointer;
-            }
-            p{
-                margin-left: 2%;
-                a{
-                    text-decoration: underline;
-                }
-            }
-        }
+        
+        
         #sign{
             background-color: #FFD700;
             padding: 2% 10%;

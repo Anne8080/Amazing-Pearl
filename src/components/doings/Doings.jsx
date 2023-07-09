@@ -5,6 +5,7 @@ const Doings = ({title, explain, link}) => {
     
   return (
     <div>
+      {/* what we do links */}
         <div className='doings'>
             <div>
             <h4>{title}</h4>

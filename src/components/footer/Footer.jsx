@@ -9,6 +9,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 const Footer = () => {
   return (
     <div className='footer'>
+        {/* top part containing links */}
         <div className="top">
             <div className="feet"><img src={logo} alt="" /></div>
             <div className="feet">
@@ -37,6 +38,7 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
+        {/* bottom part */}
         <div className="bottom">
             <img src={vector} alt="" /><br /><br />
             <p>Net Trix Solutions (c) All rights reserved.</p>
