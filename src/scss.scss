@@ -17,10 +17,6 @@ a{
     color: black;
 }
 
-input{
-    border: none;
-    
-}
 input:focus{
     outline: none;
 }
@@ -50,7 +46,7 @@ input:focus{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-
+    
     .f{
         margin-top: 5%;
         width: 50%;
@@ -61,12 +57,15 @@ input:focus{
         font-size: 20px;
         // color: #BBB7B7;
         margin-top: 10px;
-        
+        border: none;
         background-color: transparent;
         border-bottom: 1px solid black;
         
     }
+
 }
+
+
 .check{
     display: flex;
     padding: 5% 0;

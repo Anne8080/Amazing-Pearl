@@ -30,25 +30,25 @@ const Home = () => {
         {
             title: 'Home Support',
             explain: 'Help with light housekeeping, grocery shopping, transportation…',
-            link: '#',
+            link: '/care/homecare',
             del: 0
         },
         {
             title: 'Personal Care',
             explain: 'There for physical assistance, hygiene, mobility…',
-            link: '#',
+            link: '/care/personalcare',
             del: .1
         },
         {
             title: 'Nursing services',
             explain: 'In-home medical care, ostomy care…',
-            link: '#',
+            link: '/care/nursingcare',
             del: .2
         },
         {
             title: 'Respite care',
             explain: 'Support for conditions like dementia',
-            link: '#',
+            link: '/care/respitecare',
             del: .3
         }
     ]

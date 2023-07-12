@@ -5,6 +5,7 @@ import logo from '../../img/logo.png'
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (

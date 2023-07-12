@@ -4,7 +4,13 @@ import{
   Routes,
   Route,
 } from "react-router-dom"
+import Homecare from "./pages/doings/Homecare";
+import Nursingcare from "./pages/doings/Nursingcare";
+import Personalcare from "./pages/doings/Personalcare";
+import Respitecare from "./pages/doings/Respitecare";
 import Home from "./pages/home/Home";
+import Job from "./pages/job/Job";
+import Jobform from "./pages/job/Jobform";
 import Regone from "./pages/register/Regone";
 import Regthree from "./pages/register/Regthree";
 import Regtwof from "./pages/register/Regtwof";
@@ -29,6 +35,16 @@ function App() {
             <Route path="steptwofirst" element={<Regtwof />} />
             <Route path="steptwosecond" element={<Regtwos />} />
             <Route path="stepthree" element={<Regthree />} />
+          </Route>
+          <Route path="/jobs">
+            <Route index element={<Job />} />
+            <Route path="apply" element={<Jobform />} />
+          </Route>
+          <Route path="/care">
+            <Route path="homecare" element={<Homecare />} />
+            <Route path="nursingcare" element={<Nursingcare />} />
+            <Route path="personalcare" element={<Personalcare />} />
+            <Route path="respitecare" element={<Respitecare />} />
           </Route>
         </Routes>
       </BrowserRouter>

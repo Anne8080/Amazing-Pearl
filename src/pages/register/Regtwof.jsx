@@ -4,7 +4,7 @@ import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import Numbers from '../../components/numbers/Numbers'
 import './register.scss'
-
+ 
 const Regtwof = () => {
   return (
     <div>
