@@ -46,7 +46,7 @@ const Job = () => {
                     <p>BI-weekly pay</p>
                     <p>Flexible Hours</p>
                     <p>Full and part-time schedule</p>
-                </div>
+                </div> 
             </motion.div>
         </div>
         <div className="apply">

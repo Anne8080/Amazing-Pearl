@@ -15,9 +15,9 @@ import Regone from "./pages/register/Regone";
 import Regthree from "./pages/register/Regthree";
 import Regtwof from "./pages/register/Regtwof";
 import Regtwos from "./pages/register/Regtwos";
+import Sign from "./pages/sign/Sign";
 // import "aos/dist/aos.css"
 // import aos from "aos"
-import Sign from "./pages/sign/Sign";
 function App() {
   // aos.init()
   return (

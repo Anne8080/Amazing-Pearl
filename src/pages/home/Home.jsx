@@ -184,7 +184,7 @@ const Home = () => {
                             <p>By checking this box and submitting this form, you are consenting to receive marketing emails from Right at Home. You can revoke your consent to receive emails at any time. <a href=''>Privacy Policy</a>.</p>
                         </div>
                         {/* recaptcha to be added here */}
-                        <input id='sign' type="submit" value="Sign up" />
+                        <input className='button' id='sign' type="submit" value="Sign up" />
                     </form>
                 </div>
             </div>

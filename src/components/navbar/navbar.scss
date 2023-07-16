@@ -14,3 +14,10 @@
         }
     }
 }
+.navbarbg{
+    background-color: var(--yellow);
+    position: fixed;
+    width: 100vw;
+    z-index: 50;
+    transition: 0.8s ease-in-out;
+}

@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='footer'>
         {/* top part containing links */}
         <div className="top">
-            <div className="feet"><img src={logo} alt="" /></div>
+            <div className="feet"><Link to={'/'} ><img src={logo} alt="" /></Link></div>
             <div className="feet">
                 <h2>Important Links</h2>
                 <ul>
